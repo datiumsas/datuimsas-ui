@@ -70,23 +70,6 @@ export default () => {
             </LinkList>
           </Column>
           <Column>
-            <ColumnHeading>Product</ColumnHeading>
-            <LinkList>
-              <LinkListItem>
-                <Link href="#">Log In</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Personal</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Business</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Team</Link>
-              </LinkListItem>
-            </LinkList>
-          </Column>
-          <Column>
             <ColumnHeading>Press</ColumnHeading>
             <LinkList>
               <LinkListItem>
@@ -104,37 +87,12 @@ export default () => {
             </LinkList>
           </Column>
           <Column>
-            <ColumnHeading>Team</ColumnHeading>
+            <ColumnHeading>FRANCE</ColumnHeading>
             <LinkList>
-              <LinkListItem>
-                <Link href="#">Career</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Founders</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Culture</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Onboarding</Link>
-              </LinkListItem>
-            </LinkList>
-          </Column>
-          <Column>
-            <ColumnHeading>Legal</ColumnHeading>
-            <LinkList>
-              <LinkListItem>
-                <Link href="#">GDPR</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Privacy Policy</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Terms of Service</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Disclaimer</Link>
-              </LinkListItem>
+              <h2>12 rue Jean Froissart</h2>
+
+              <h2> 59200 Tourcoing</h2>
+              <h2>contact@datium.fr</h2>
             </LinkList>
           </Column>
         </FiveColumns>
@@ -142,9 +100,11 @@ export default () => {
         <ThreeColRow>
           <LogoContainer>
             <LogoImg src={LogoImage} />
-            <LogoText>Treact Inc.</LogoText>
+            <LogoText>DatiumSas</LogoText>
           </LogoContainer>
-          <CopywrightNotice>&copy; 2018 Treact Inc. All Rights Reserved.</CopywrightNotice>
+          <CopywrightNotice>
+            &copy; 2018 Treact Inc. All Rights Reserved.
+          </CopywrightNotice>
           <SocialLinksContainer>
             <SocialLink href="https://facebook.com">
               <FacebookIcon />

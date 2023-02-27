@@ -5,15 +5,11 @@ import Hero from "components/hero/TwoColumnWithVideo";
 import Features from "components/features/ThreeColSimple";
 import MainFeature from "components/features/TwoColWithButton";
 import Footer from "components/footers/FiveColumnWithBackground";
-import chefIconImageSrc from "images/chef-icon.svg";
-import celebrationIconImageSrc from "images/celebration-icon.svg";
-import shopIconImageSrc from "images/shop-icon.svg";
 import serverRedundancyIllustrationImageSrc from "images/server-redundancy-illustration.svg";
 import serverSecureIllustrationImageSrc from "images/server-secure-illustration.svg";
 
 import { Link } from "react-scroll";
 import ThreeColContactDetails from 'components/cards/ThreeColContactDetails';
-import GetStarted from 'components/cta/GetStarted';
 import GetStartedLight from 'components/cta/GetStartedLight';
 import TwoColSingleFeatureWithStats from 'components/features/TwoColSingleFeatureWithStats';
 
@@ -27,12 +23,12 @@ const Home = ()=> {
       <Hero
         heading={
           <>
-            Delicious & Affordable{" "}
-            <HighlightedText>Meals Near You.</HighlightedText>
+            VOTRE SPÉCIALISTE EN DÉVELOPPEMENT SUR MESURE{" "}
+            <HighlightedText>Digitalisation de vos idées </HighlightedText>
           </>
         }
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        imageSrc="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
+        description="Une tâche répétitive ? Une idée révolutionnaire ? Un besoin d’accroître la rentabilité de votre entreprise ?"
+        imageSrc="https://img.freepik.com/free-vector/having-idea-design_1133-152.jpg?w=740&t=st=1677242009~exp=1677242609~hmac=c5c93ae6108b09347457175e872b45d3e1b7a2815435e1ecae5d40f65984c5f2"
         imageCss={imageCss}
         imageDecoratorBlob={true}
         primaryButtonText={
@@ -43,28 +39,27 @@ const Home = ()=> {
         watchVideoButtonText="Meet The Chefs"
       />
       <MainFeature
-        subheading={<Subheading>Established Since 2014</Subheading>}
+        subheading={<Subheading>Established Since 2022</Subheading>}
         heading={
           <>
-            We've been serving for
-            <wbr /> <HighlightedText>over 5 years.</HighlightedText>
+            Votre partenaire IT de confiance
+
+            <wbr /> <HighlightedText>Datium.</HighlightedText>
           </>
         }
         description={
           <Description>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            <br />
-            <br />
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat.
+           Chez Datium, Nous concevons des solutions sur mesure pour répondre aux besoins particulières de votre entreprise 
+<br />
+Notre équipe d'experts s'occupe de toute la démarche  pour vous permettre de vous concentrer sur votre activité principale."
+
           </Description>
         }
         buttonRounded={false}
         textOnLeft={false}
         primaryButtonText="Latest Offers"
         imageSrc={
-          "https://images.unsplash.com/photo-1460306855393-0410f61241c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
+          "/image/img.jpg"
         }
         imageCss={imageCss}
         imageDecoratorBlob={true}
@@ -78,30 +73,45 @@ const Home = ()=> {
         }
         cards={[
           {
-            imageSrc: shopIconImageSrc,
-            title: "230+ Locations",
-            description: "Lorem ipsum donor amet siti ceali placeholder text",
-            url: "https://google.com",
+            imageSrc: "/image/cloud.png",
+            title: "Architecture Cloud",
+            description: "Nous concevons et déployons des architectures cloud peer-to-peer pour des solutions intelligentes telles que Smart city et Smart home",
+          
           },
           {
-            imageSrc: chefIconImageSrc,
-            title: "Professional Chefs",
-            description: "Lorem ipsum donor amet siti ceali placeholder text",
-            url: "https://timerse.com",
+            imageSrc: "/image/migration.png",
+            title: "Migration vers le Cloud",
+            description: "Nous élaborons des stratégies de migration fluides pour faciliter le déploiement des infrastructures existantes vers le cloud.",
           },
           {
-            imageSrc: celebrationIconImageSrc,
-            title: "Birthday Catering",
-            description: "Lorem ipsum donor amet siti ceali placeholder text",
-            url: "https://reddit.com",
+            imageSrc: "/image/devops.png",
+            title: "Devops",
+            description: "Nous augmentons l'agilité et accélérons le délai de livraison de vos solutions en automatisant le pipeline de développement ",
+           
+          },
+          {
+            imageSrc: "/image/finops.png",
+            title: "Administration et FinOps",
+            description: "Nous optimisons vos coûts Cloud en gérant les dépenses opérationnelles et en déployant des stratégies d'optimisation pour une utilisation plus efficace des ressources.",
+           
+          },
+          {
+            imageSrc: "/image/dev.png",
+            title: "Développement ",
+            description: "Nous apportons des réponses à vos problématiques métier en développant des solutions techniques fiables, évolutives et faciles à prendre en main.",
+           
           },
         ]}
         imageContainerCss={tw`p-2!`}
         imageCss={tw`w-20! h-20!`}
       />
       <MainFeature
-        subheading="Reliable"
-        heading="Highly Redundant Servers With Backup"
+        subheading="Qui somme nous ?"
+        heading="Datium"
+        description=" est une entreprise de conseil et de services numériques qui propose des solutions innovantes pour aider les entreprises à réussir leur transformation digitale.
+        Nous sommes une équipe de jeunes experts et passionnée par l'innovation et la recherche de solutions  personnalisées, technologiques innovantes et abordables pour les petites et moyennes entreprises qui répondent aux besoin unique de chaque client. 
+Nous travaillons en étroite collaboration avec nos clients pour comprendre leurs défis et leurs objectifs pour stimuler leur croissance. 
+"
         imageSrc={serverRedundancyIllustrationImageSrc}
         buttonRounded={false}
       />
@@ -112,9 +122,8 @@ const Home = ()=> {
         buttonRounded={false}
         textOnLeft={false}
       />
+      <h1></h1>
       <ThreeColContactDetails></ThreeColContactDetails>
-      <GetStartedLight />
-      <TwoColSingleFeatureWithStats></TwoColSingleFeatureWithStats>
       <Footer />
     </AnimationRevealPage>
   );
